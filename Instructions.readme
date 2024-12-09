@@ -1,0 +1,21 @@
+﻿About
+-----
+This Scripts is supposed to automate tileable projections, I use it with Build and Repair but there might be other applications.
+It will monitor a projector and each time the projection is finished it will move it by a certain offset for <repeat> times.
+
+Setup
+-----
+Tag: You can set the Tag in the Programmable Blocks Custom Data
+Add Projectors: Add [<Tag>] to a Projectors custom data and run the script with the argument "update"
+
+Configuration
+-------------
+Programmable Block Settings:
+- Tag: The tag used to identify projectors managed by the script. Default is [BPA].
+
+Projector Settings:
+// You will find these after running "update" in the Projectors Custom Data
+- repeat: The number of times the projection should be repeated. -1 means infinite repeats.
+- VerticalOffset: The offset in the vertical direction.
+- HorizontalOffset: The offset in the horizontal direction.
+- ForwardOffset: The offset in the forward direction.
